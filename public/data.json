@@ -4,7 +4,7 @@
     "title": "Login Issues - Can't Access Account",
     "status": "Open",
     "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still cannot access.",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "customer": "John Smith",
     "date": "15/01/2024"
   },
@@ -13,8 +13,8 @@
     "title": "Payment Failed - Order Not Processed",
     "status": "Open",
     "description": "User reports that their payment failed despite entering correct card details. No confirmation email received.",
-    "priority": "High",
-    "customer": "Sarah Johnson",
+    "priority": "HIGH PRIORITY",
+    "customer": "Sarah",
     "date": "03/02/2024"
   },
   {
@@ -22,8 +22,8 @@
     "title": "App Crashes on Startup",
     "status": "In Progress",
     "description": "Customer reports that the app immediately crashes when opened on Android 13 devices.",
-    "priority": "Medium",
-    "customer": "Michael Brown",
+    "priority": "MEDIUM PRIORITY",
+    "customer": "Michael",
     "date": "10/03/2024"
   },
   {
@@ -31,7 +31,7 @@
     "title": "Unable to Reset Password",
     "status": "Closed",
     "description": "User successfully reset password after support team guidance.",
-    "priority": "Low",
+    "priority": "LOW PRIORITY",
     "customer": "Emily Davis",
     "date": "22/03/2024"
   },
@@ -40,8 +40,8 @@
     "title": "Website Not Loading on Safari",
     "status": "Open",
     "description": "Customer reports that the website does not load properly on Safari browser version 16.3.",
-    "priority": "Medium",
-    "customer": "Robert Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "customer": "Robert",
     "date": "02/04/2024"
   },
   {
@@ -49,8 +49,8 @@
     "title": "Incorrect Billing Amount",
     "status": "In Progress",
     "description": "Customer was charged twice for the same subscription plan. Needs immediate refund.",
-    "priority": "High",
-    "customer": "Jessica Taylor",
+    "priority": "HIGH PRIORITY",
+    "customer": "Jessica ",
     "date": "17/05/2024"
   },
   {
@@ -58,8 +58,8 @@
     "title": "Two-Factor Authentication Not Working",
     "status": "Open",
     "description": "Customer unable to receive verification code via SMS for 2FA login.",
-    "priority": "High",
-    "customer": "David Anderson",
+    "priority": "HIGH PRIORITY",
+    "customer": "David H.son",
     "date": "03/06/2024"
   },
   {
@@ -67,8 +67,8 @@
     "title": "Missing Order Confirmation Email",
     "status": "Closed",
     "description": "Customer did not receive confirmation email but order was processed successfully.",
-    "priority": "Low",
-    "customer": "Sophia Martinez",
+    "priority": "LOW PRIORITY",
+    "customer": "Sophia",
     "date": "08/07/2024"
   },
   {
@@ -76,8 +76,8 @@
     "title": "Slow Website Performance",
     "status": "In Progress",
     "description": "Website taking too long to load for users in Europe. Reported by multiple customers.",
-    "priority": "Medium",
-    "customer": "Daniel Thomas",
+    "priority": "MEDIUM PRIORITY",
+    "customer": "Danil Thoms",
     "date": "14/08/2024"
   },
   {
@@ -85,16 +85,16 @@
     "title": "Mobile App - Notification Delay",
     "status": "Open",
     "description": "Notifications are delayed by several minutes on iOS devices.",
-    "priority": "Low",
+    "priority": "LOW PRIORITY",
     "customer": "Olivia Garcia",
     "date": "25/09/2024"
   },
   {
     "id": 1011,
-    "title": "Refund Request for Duplicate Payment",
+    "title": "Refund Request",
     "status": "In Progress",
     "description": "Customer paid twice due to technical glitch and requests refund confirmation.",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "customer": "Ethan Lee",
     "date": "12/10/2024"
   },
@@ -103,7 +103,7 @@
     "title": "Cannot Update Profile Picture",
     "status": "Closed",
     "description": "Customer was unable to update their profile image but issue resolved after cache clearing.",
-    "priority": "Low",
+    "priority": "LOW PRIORITY",
     "customer": "Ava White",
     "date": "03/11/2024"
   }

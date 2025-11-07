@@ -3,7 +3,13 @@ import Navbar from './components/Navbar/Navbar'
 import vector1 from './assets/vector1.png'
 import vector3 from './assets/vector3.png'
 import Footer from './components/Navbar/Footer'
-import { IoCalendar } from 'react-icons/io5';
+import TicketCards from './components/TicketCards/TicketCards'
+
+const fetchData = async () =>{
+  const res = await fetch('./data.json')
+  return res.json();
+}
+const dataPromise = fetchData()
 
 function App() {
   return (
@@ -40,32 +46,7 @@ function App() {
         <div className="w-[80%]">
           <h3 className='font-semibold text-2xl mb-3 text-[#34485A]'>Customer Tickets</h3>
           {/* Data Starts here --- Component hobe */}
-          <div className="grid grid-cols-2 gap-4 ">
-            <div className="p-4 bg-white rounded-lg shadow-lg-300">
-              <div className='flex justify-between items-center'>
-                <h4 className="text-lg text-[#001931]">Login Issues - Can't Access Account</h4>
-                <div className="flex items-center space-x-2 bg-green-100 rounded-full py-2 px-4 w-fit">
-                  <div className="w-3 h-3 bg-green-800 rounded-full"></div>                
-                  <span className="text-green-800 font-semibold">Open</span>
-                </div>
-              </div>
-              <p className="text-base text-[#627382] my-3">Customer is unable to log in to their account. They've tried resetting their password multiple times but still...</p>
-              <div className="flex justify-between">
-                <div className="align-center flex gap-3 w-[50%]">
-                  <h4 className="text-base text-[#627382]">#1001</h4>
-                  <h4 className="text-base text-[#F83044] uppercase">#HIGH PRIORITY</h4>
-                </div>
-                <div className="align-center flex gap-3 w-[50%] justify-end">
-                  <h4 className="text-base text-[#627382]">John Smith</h4>
-                  <div className="flex">
-                    <IoCalendar color="#627382" size={23} />
-                    <span className="text-base text-[#627382] ml-1">1/15/2024</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          </div>
+          <TicketCards dataPromise={dataPromise}></TicketCards>
           
         </div>
         <div className="w-[20%]">
