@@ -34,6 +34,16 @@ function App() {
           <h2 className="text-6xl font-semibold">0</h2>
         </div>
       </div>
+      
+      <div className="flex gap-6 lg:flex-row flex-col max-w-[1200px] mx-auto mt-16 justify-between">
+        <div className="w-3/5">
+          <h3 className='font-semibold text-2xl text-[#34485A]'>Customer Tickets</h3>
+        </div>
+        <div className="w-2/5">
+          <h3 className='font-semibold text-2xl text-[#34485A]'>Task Status</h3>
+        </div>
+      </div>
+
       <Footer></Footer>
     </>
   )

@@ -1,40 +1,104 @@
 import React from 'react';
+import { TiSocialTwitter } from 'react-icons/ti';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
+import { TiSocialFacebookCircular } from 'react-icons/ti';
+import { CgMail } from 'react-icons/cg';
+
 const Footer = () => {
-    return (
-        <div>
-            <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-            <nav className='w-1/5'>
-                <h6 className="footer-title text-white">CS — Ticket System</h6>
-                <p className=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </nav>
-            <nav className='w-1/5'>
-                <h6 className="footer-title text-white">Company</h6>
-                <a className="link link-hover text-[#A1A1AA]">About Us</a>
-                <a className="link link-hover text-[#A1A1AA]">Our Mission</a>
-                <a className="link link-hover text-[#A1A1AA]">Contact Saled</a>
-            </nav>
-            <nav className='w-1/5'>
-                <h6 className="footer-title text-white">Services</h6>
-                <a className="link link-hover text-[#A1A1AA]">Products & Services</a>
-                <a className="link link-hover text-[#A1A1AA]">Customer Stories</a>
-                <a className="link link-hover text-[#A1A1AA]">Download Apps</a>
-            </nav>
-            <nav className='w-1/5'>
-                <h6 className="footer-title text-white">Information</h6>
-                <a className="link link-hover text-[#A1A1AA]">Privacy Policy</a>
-                <a className="link link-hover text-[#A1A1AA]">Terms & Conditions</a>
-                <a className="link link-hover text-[#A1A1AA]">Join Us</a>
-            </nav>
-            <nav className='w-1/5'>
-                <h6 className="footer-title text-white">Social Links</h6>
-                <a className="link link-hover text-[#A1A1AA]">@CS — Ticket System</a>
-                <a className="link link-hover text-[#A1A1AA]">@CS — Ticket System</a>
-                <a className="link link-hover text-[#A1A1AA]">@CS — Ticket System</a>
-                <a className="link link-hover text-[#A1A1AA]">support@cst.com</a>
-            </nav>
-            </footer>
+  return (
+    <>
+      <footer className="bg-black mt-10 md:mt-20">
+        <div className="container mx-auto">
+          <div className="py-10 md:py-20 text-white px-3 grid grid-cols-1 md:grid-cols-6 ">
+            <div className="md:col-span-2 mb-5 md:mb-0">
+              <h2 className="text-lg font-bold mb-2 text-center md:text-start">
+                CS — Ticket System
+              </h2>
+              <p className="md:w-96 text-[#a1a1aa] text-sm text-justify">
+                SupportHub — Ticket System is a modern customer-support and ticket-tracking platform that helps teams manage and resolve
+                issues faster. From login problems to billing queries, SupportHub keeps every request organized in one place and makes it
+                easy for customers to get timely help.
+              </p>
+            </div>
+            <div className="mb-5">
+              <h2 className="md:text-lg font-bold mb-2">Company</h2>
+              <ul className="space-y-2 text-[#a1a1aa] text-sm">
+                <li className="footerLink cursor-pointer w-fit">About Us</li>
+                <li className="footerLink cursor-pointer w-fit">Our Mission</li>
+                <li className="footerLink cursor-pointer w-fit">Contact Us</li>
+              </ul>
+            </div>
+            <div className="mb-5">
+              <h2 className="md:text-lg font-bold mb-2">Services</h2>
+              <ul className="space-y-2 text-[#a1a1aa] text-sm">
+                <li className="footerLink cursor-pointer w-fit">Products & Services</li>
+                <li className="footerLink cursor-pointer w-fit">Customer Stories</li>
+                <li className="footerLink cursor-pointer w-fit">Download Apps</li>
+              </ul>
+            </div>
+            <div className="mb-5">
+              <h2 className="md:text-lg font-bold mb-2">Information</h2>
+              <ul className="space-y-2 text-[#a1a1aa] text-sm">
+                <li className="footerLink cursor-pointer w-fit">Privacy Policy</li>
+                <li className="footerLink cursor-pointer w-fit">Terms & Conditions</li>
+                <li className="footerLink cursor-pointer w-fit">Join Us</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="md:text-lg font-bold mb-2">Social Links</h2>
+              <ul className="space-y-2 text-[#a1a1aa] text-sm">
+                <li className="flex items-center gap-2 cursor-pointer w-fit group">
+                  <TiSocialTwitter size={20} />
+                  <span
+                    className="transition-colors duration-500 
+                    group-hover:text-transparent group-hover:bg-clip-text 
+                    group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500"
+                  >
+                    @CS — Ticket System
+                  </span>
+                </li>
+                <li className="flex items-center gap-2 cursor-pointer w-fit group">
+                  <TiSocialLinkedinCircular size={20} />
+                  <span
+                    className="transition-colors duration-500 
+                    group-hover:text-transparent group-hover:bg-clip-text 
+                    group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500"
+                  >
+                    @CS — Ticket System
+                  </span>
+                </li>
+                <li className="flex items-center gap-2 cursor-pointer w-fit group">
+                  <TiSocialFacebookCircular size={20} />
+                  <span
+                    className="transition-colors duration-500 
+                    group-hover:text-transparent group-hover:bg-clip-text 
+                    group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500"
+                  >
+                    @CS — Ticket System
+                  </span>
+                </li>
+                <li className="flex items-center gap-3 cursor-pointer w-fit group">
+                  <CgMail size={20} />
+                  <span
+                    className="transition-colors duration-500 
+                    group-hover:text-transparent group-hover:bg-clip-text 
+                    group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500"
+                  >
+                    support@cst.com
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-5 md:py-7 border-t">
+            <p className="text-[#fafafa] text-sm text-center ">© 2025 CS — Ticket System. All rights reserved.
+            </p>
+          </div>
         </div>
-    );
+      </footer>
+    </>
+  );
 };
 
 export default Footer;
